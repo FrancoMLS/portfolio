@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Franco Manuel Lonello Serra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/261bda0ed4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#conocimientos">Conocimientos</a></li>
+            <li><a href="#trabajos">Trabajos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <h1 style="color: rgb(255, 255, 255);"> FMLS</h1>
+    </nav>
+    <main>
+        <div class="inicio" id="inicio">
+            <p>¡Hola! Mi nombre es Franco Manuel Lonello Serra y te doy la bienvenida. ¡No dudes en contactarte conmigo!</p>
+        </div>
+        <span id="sobre-mi"></span>
+        <h2 class="titulo" > Sobre mi </h2>
+        <div class="sobre-mi">          
+            <p> Soy un apasionado desarrollador web argentino dedicado a tejer historias digitales cautivadoras a través del código. Mi enfoque se centra en la creación de experiencias únicas y funcionales que fusionan la estética con la usabilidad. Con un ojo puesto en las últimas conocimientos, me esfuerzo por superar desafíos y elevar constantemente mis conocimientos para ofrecer soluciones web innovadoras y efectivas. </p>
+            <p> Al explorar mi portfolio, te invito a sumergirte en un viaje a través de diversos proyectos que reflejan mi dedicación a la excelencia. Cada línea de código es una manifestación de mi compromiso con la calidad y la creatividad. Bienvenido a mi mundo digital, donde la programación se convierte en arte y cada proyecto es una oportunidad para crear algo extraordinario.</p>
+        </div>
+        <div class="conocimientos" id="conocimientos">
+            <h2 class="titulo-conocimientos">Conocimientos</h2>
+            <div class="tecno">
+                <div class="front">
+                    <span class="nombre">Front-end (nivel básico)</span>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>Vue Js</li>
+                    </ul>
+                </div>
+                <div class="back">
+                    <span class="nombre">Back-end (nivel básico)</span>
+                    <ul>
+                        <li>Python</li>
+                        <li>MySQL</li>
+                        <li>Flask</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="trabajos">
+            <h2 class="titulo-trabajos"> Trabajos </h2>
+            <p>Al hacer click en las imágenes, visitará el enlace del sitio</p>
+            <div class="trabajos">
+                <div class="chubut">
+                    <p> Chubut Explorers es un sitio de turismo de la ciudad de Trevelin de la provincia de Chubut, ubicada en Argentina</p>
+                    <a href="https://chubutexplorerscrud.netlify.app/" target="_blank">
+                        <img src="img/chubutexplorers_logo.png" alt="Logo Chubut Explorers">
+                    </a>
+                </div>
+                <div class="pelis">
+                    <p> PelisNight proporciona información detallada sobre películas. Sirve como una guía informativa para ayudar a los usuarios a descubrir y conocer más sobre sus películas favoritas. </p>
+                    <a href="https://pelisnight.netlify.app/" target="_blank">
+                    <img src="img/image-PhotoRoom.png-PhotoRoom.png" alt="Logo PelisNight">
+                    </a>
+                </div>              
+            </div>
+            
+        </div>
+        <div id="contacto">
+            <h2 class="titulo-contacto"> Contacto </h2>
+            <div class="iconos">
+                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i><a href="mailto:francolonelloserra@gmail.com" class="red">francolonelloserra@gmail.com</a> <br>
+                <i class="fa-solid fa-phone" style="color: #ffffff;"></i><span class="red">+54 9 011-6511-9442</span><br>
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> <a href="https://www.instagram.com/francolonelloserra/" class="red" target="_blank">francolonelloserra</a><br>
+                <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i><a href="https://www.linkedin.com/in/franco-manuel-lonello-serra-b01189283/" class="red" target="_blank">Linkedin</a>
+            </div>
+        </div>
+    </main>
+    
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('nav a');
+
+    links.forEach(link => {
+        link.addEventListener('click', smoothScroll);
+    });
+
+    function smoothScroll(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const offset = 100; // Ajusta este valor según tus necesidades
+            const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+
+            window.scrollTo({
+                top: targetPosition - offset,
+                behavior: 'smooth'
+            });
+        }
+    }
+});
+    </script>
+</body>
+</html>

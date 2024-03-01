@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+body {
+    background-color: #000000;
+}
+
+nav h1 {
+    font-size: 2em;
+    margin-right: 20%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #817f7f;
+}
+
+.inicio {
+    background: url('../img/AdobeStock_126016889apaisado.jpg') center/cover;
+}
+
+.inicio p {
+    background-color: #292626af;
+    color: #ffffff;
+    padding: 150px;
+    font-size: 5em;
+}
+
+.sobre-mi p{
+    display: block;
+    font-size: 1.8em;
+    margin: 10px;
+}
+
+.sobre-mi {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 0 80px 70px 80px;
+}
+
+.titulo, .titulo-trabajos {
+    color: #ffffff;
+    text-align: left;
+    border-bottom: 1px solid #b97171;
+    font-size: 4em;
+    padding: 20px;
+    margin: 0 70px 20px 70px;
+}
+
+.conocimientos {
+    background: linear-gradient(#000000a7, #00000097), url('../img/singlepage-desarrollo-web.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.titulo-conocimientos, .titulo-contacto {
+    text-align: right;
+    color: #ffffff;
+    font-size: 60px;
+    border-bottom: 1px solid #b97171;
+    margin: 0 90px 20px 90px;
+    padding: 20px;
+}
+
+.nombre {
+    font-size: 2em;
+    padding: 30px;
+}
+
+.tecno {
+    display: flex;
+    justify-content: space-around;
+}
+
+.conocimientos div {
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.front, .back{
+    margin: 100px 10px;
+    border: 2px solid #757474;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tecno ul {
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding-left: 50px; /* Ajusta el valor según tus necesidades */
+}
+
+#trabajos p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.trabajos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #ffffff;
+    text-align: center;
+}
+
+.trabajos img {
+    width: 200px;
+    margin: 50px;
+}
+
+.chubut, .pelis {
+    border: 1px solid #ffffff;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 80px;
+    flex: 1;
+}
+
+.chubut p, .pelis p {
+    margin: 30px;
+}
+
+#contacto {
+    background: linear-gradient(#000000a7, #00000097), url('../img/Contacto-221823826.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.red {
+    color: #ffffff;
+}
+
+.iconos {
+    margin: 70px;
+    font-size: 2em;
+    padding-bottom: 50px;
+}
+
+i {
+    padding: 20px;
+}
+
+.iconos a{
+    text-decoration: none;
+}
